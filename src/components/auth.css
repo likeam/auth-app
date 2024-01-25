@@ -1,0 +1,14 @@
+.authInput{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightslategray;
+    
+  }
+
+  .container {
+    width: 600px !important;
+    padding: 0 !important;
+    margin-right: auto;
+    margin-left: auto;
+  }

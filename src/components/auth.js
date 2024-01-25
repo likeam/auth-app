@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { auth, googleProvidr } from '../config/firebase'; 
 import { createUserWithEmailAndPassword ,signInWithPopup, signOut} from 'firebase/auth';
+import './auth.css'
 
 export const  Auth = () => {
 
@@ -33,16 +34,16 @@ export const  Auth = () => {
 
 
     return (
-        <div>
+        <div className='authInput container'>
             <input  
                 placeholder='Email'
-                type='email'
+                type="email" name="email"
                 onChange={(e) => setEmail(e.target.value)}
             />
             <input 
                 placeholder='Passward'
                 onChange={(e) => setPassward(e.target.value)} 
-                type='passward'
+                type="password" name="password"
             />
             <button onClick={signIn}>Sing In</button>
             <button onClick={signInWithGoogle}>Sing In with Google</button>
